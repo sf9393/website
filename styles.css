@@ -132,7 +132,7 @@ nav a:focus-visible {
   background-size: 5px 5px;
   content: "";
   mask-image: linear-gradient(110deg, transparent 28%, rgba(0, 0, 0, 0.18) 50%, #000 100%);
-  opacity: 0.34;
+  opacity: 0.48;
   pointer-events: none;
 }
 
@@ -294,7 +294,9 @@ nav a:focus-visible {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(to top, rgba(6, 26, 56, 0.86), transparent 45%);
+  background:
+    radial-gradient(rgba(150, 205, 255, 0.36) 0.65px, transparent 0.9px) 0 0 / 5px 5px,
+    linear-gradient(to top, rgba(6, 26, 56, 0.86), transparent 45%);
   content: "";
 }
 
@@ -378,11 +380,32 @@ nav a:focus-visible {
 }
 
 .capability-card {
+  position: relative;
   min-height: 330px;
+  overflow: hidden;
   padding: 28px 25px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   background: linear-gradient(145deg, rgba(255,255,255,0.018), transparent 55%);
+}
+
+.capability-card::before {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(rgba(128, 194, 255, 0.45) 0.72px, transparent 0.9px);
+  background-size: 5px 5px;
+  content: "";
+  mask-image: radial-gradient(circle, #000 0%, transparent 70%);
+  opacity: 0.42;
+  pointer-events: none;
+}
+
+.capability-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .card-index {
@@ -637,7 +660,7 @@ footer p {
   .hero::before {
     background-size: 4px 4px;
     mask-image: linear-gradient(145deg, transparent 38%, rgba(0, 0, 0, 0.18) 72%, #000 100%);
-    opacity: 0.2;
+    opacity: 0.3;
   }
 
   .hero h1 {
