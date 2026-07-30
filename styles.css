@@ -119,11 +119,26 @@ nav a:focus-visible {
 
 .hero {
   position: relative;
+  overflow: hidden;
   padding: 100px 0 112px;
   border-bottom: 1px solid var(--line);
 }
 
+.hero::before {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(128, 194, 255, 0.46) 0.72px, transparent 0.9px);
+  background-position: 18px 10px;
+  background-size: 5px 5px;
+  content: "";
+  mask-image: linear-gradient(110deg, transparent 28%, rgba(0, 0, 0, 0.18) 50%, #000 100%);
+  opacity: 0.34;
+  pointer-events: none;
+}
+
 .hero-layout {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.7fr);
   align-items: center;
@@ -183,6 +198,46 @@ nav a:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 9px;
+  margin-top: 26px;
+}
+
+.hero-socials a {
+  display: grid;
+  width: 37px;
+  height: 37px;
+  place-items: center;
+  border: 1px solid #2a578c;
+  border-radius: 50%;
+  background: rgba(6, 26, 56, 0.7);
+  color: #c9def5;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.hero-socials a:hover,
+.hero-socials a:focus-visible {
+  transform: translateY(-2px);
+  border-color: #7fc4ff;
+  background: #62b5ff;
+  color: #061a38;
+}
+
+.hero-socials svg {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
+}
+
+.hero-socials a:first-child svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
 }
 
 .button {
