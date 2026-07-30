@@ -1,14 +1,14 @@
 :root {
   color-scheme: dark;
-  --background: #08090a;
-  --surface: #0e1012;
-  --surface-raised: #121518;
-  --line: #24272b;
-  --line-soft: #191c1f;
-  --text: #f4f4f5;
-  --muted: #95999f;
-  --accent: #8af5c1;
-  --accent-soft: rgba(138, 245, 193, 0.1);
+  --background: #061a38;
+  --surface: #0a2348;
+  --surface-raised: #0d2b57;
+  --line: #1d477b;
+  --line-soft: #12365f;
+  --text: #f5f9ff;
+  --muted: #afc4df;
+  --accent: #62b5ff;
+  --accent-soft: rgba(98, 181, 255, 0.16);
   --page-width: 1180px;
 }
 
@@ -48,7 +48,7 @@ h3 {
   height: 640px;
   transform: translateX(-50%);
   pointer-events: none;
-  background: radial-gradient(circle, rgba(87, 231, 162, 0.11), transparent 67%);
+  background: radial-gradient(circle, rgba(57, 137, 224, 0.28), transparent 67%);
   filter: blur(12px);
 }
 
@@ -86,7 +86,7 @@ footer > div {
   width: 32px;
   height: 32px;
   place-items: center;
-  border: 1px solid #34383d;
+  border: 1px solid #2a578c;
   border-radius: 50%;
   font-family: "DM Mono", monospace;
   font-size: 10px;
@@ -111,10 +111,10 @@ nav a:focus-visible {
 
 .nav-cta {
   padding: 9px 13px;
-  border: 1px solid #30343a;
+  border: 1px solid #2a578c;
   border-radius: 7px;
   color: var(--text);
-  background: #111315;
+  background: #0b2851;
 }
 
 .hero {
@@ -168,13 +168,13 @@ nav a:focus-visible {
 }
 
 .hero h1 span {
-  color: #656a70;
+  color: #7ea3d0;
 }
 
 .hero-copy {
   max-width: 710px;
   margin-bottom: 36px;
-  color: #a9adb2;
+  color: #c1d2e8;
   font-size: 16px;
   line-height: 1.72;
 }
@@ -205,18 +205,18 @@ nav a:focus-visible {
 }
 
 .button-primary {
-  border-color: #e9e9eb;
-  background: #f4f4f5;
-  color: #090a0b;
+  border-color: #7fc4ff;
+  background: #62b5ff;
+  color: #061a38;
 }
 
 .button-secondary {
-  background: #101214;
-  color: #d4d5d7;
+  background: #0b2851;
+  color: #d8e8fa;
 }
 
 .button-secondary:hover {
-  border-color: #3a3e43;
+  border-color: #3d78b5;
 }
 
 .hero-portrait {
@@ -232,7 +232,7 @@ nav a:focus-visible {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: linear-gradient(to top, rgba(8, 9, 10, 0.82), transparent 45%);
+  background: linear-gradient(to top, rgba(6, 26, 56, 0.86), transparent 45%);
   content: "";
 }
 
@@ -261,7 +261,7 @@ nav a:focus-visible {
 
 .hero-portrait figcaption span:last-child {
   max-width: 130px;
-  color: #b1b5b9;
+  color: #c8daf0;
   line-height: 1.45;
   text-align: right;
 }
@@ -284,7 +284,7 @@ nav a:focus-visible {
 }
 
 .section-label span {
-  color: #53575c;
+  color: #6d94bf;
 }
 
 .section-label p {
@@ -326,7 +326,7 @@ nav a:focus-visible {
 .card-index {
   display: block;
   margin-bottom: 86px;
-  color: #50545a;
+  color: #6d94bf;
   font-family: "DM Mono", monospace;
   font-size: 11px;
 }
@@ -354,7 +354,7 @@ nav a:focus-visible {
   padding: 5px 8px;
   border: 1px solid var(--line);
   border-radius: 999px;
-  color: #858a8f;
+  color: #a9c1dc;
   font-family: "DM Mono", monospace;
   font-size: 9px;
 }
@@ -417,7 +417,7 @@ nav a:focus-visible {
 .role-details li {
   position: relative;
   padding-left: 18px;
-  color: #c0c3c6;
+  color: #d5e5f7;
   font-size: 13px;
   line-height: 1.55;
 }
@@ -449,12 +449,12 @@ nav a:focus-visible {
 
 .project:hover {
   padding-inline: 18px;
-  background: linear-gradient(90deg, rgba(138,245,193,0.04), transparent);
+  background: linear-gradient(90deg, rgba(98, 181, 255, 0.12), transparent);
 }
 
 .project .mono {
   margin-bottom: 13px;
-  color: #62676c;
+  color: #85a9d1;
 }
 
 .project h2 {
@@ -473,7 +473,7 @@ nav a:focus-visible {
 }
 
 .project-arrow {
-  color: #64696e;
+  color: #85a9d1;
   font-size: 22px;
 }
 
