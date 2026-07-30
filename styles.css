@@ -203,18 +203,18 @@ nav a:focus-visible {
 .hero-socials {
   display: flex;
   gap: 9px;
-  margin-top: 26px;
+  margin: 6px 0 22px;
 }
 
 .hero-socials a {
   display: grid;
-  width: 37px;
-  height: 37px;
+  width: 34px;
+  height: 34px;
   place-items: center;
-  border: 1px solid #2a578c;
+  border: 1px solid rgba(201, 222, 245, 0.34);
   border-radius: 50%;
-  background: rgba(6, 26, 56, 0.7);
-  color: #c9def5;
+  background: transparent;
+  color: rgba(225, 239, 255, 0.78);
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
 }
 
@@ -222,7 +222,7 @@ nav a:focus-visible {
 .hero-socials a:focus-visible {
   transform: translateY(-2px);
   border-color: #7fc4ff;
-  background: #62b5ff;
+  background: #f5f9ff;
   color: #061a38;
 }
 
