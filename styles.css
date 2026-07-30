@@ -631,15 +631,45 @@ footer p {
   }
 
   .hero {
-    padding: 72px 0 82px;
+    padding: 58px 0 72px;
+  }
+
+  .hero::before {
+    background-size: 4px 4px;
+    mask-image: linear-gradient(145deg, transparent 38%, rgba(0, 0, 0, 0.18) 72%, #000 100%);
+    opacity: 0.2;
   }
 
   .hero h1 {
-    font-size: clamp(46px, 15vw, 68px);
+    font-size: clamp(40px, 12vw, 52px);
+    line-height: 1.03;
+    letter-spacing: -0.055em;
   }
 
   .hero-copy {
-    font-size: 16px;
+    margin-bottom: 28px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .hero-socials {
+    gap: 10px;
+    margin: 0 0 20px;
+  }
+
+  .hero-socials a {
+    width: 44px;
+    height: 44px;
+  }
+
+  .hero-socials svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hero-socials a:nth-child(2) svg {
+    width: 19px;
+    height: 19px;
   }
 
   .hero-actions {
@@ -648,11 +678,22 @@ footer p {
   }
 
   .button {
+    min-height: 50px;
     justify-content: space-between;
   }
 
   .hero-layout {
-    gap: 56px;
+    gap: 42px;
+  }
+
+  .hero-portrait {
+    border-radius: 12px;
+  }
+
+  .hero-portrait figcaption {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
   }
 
   .section {
