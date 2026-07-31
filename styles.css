@@ -583,19 +583,12 @@ nav a:focus-visible {
   gap: 30px;
   padding: 42px 4px;
   border-bottom: 1px solid var(--line);
-  cursor: pointer;
   transition: padding 180ms ease, background 180ms ease;
 }
 
-.project:hover,
-.project:focus-visible {
+.project:hover {
   padding-inline: 18px;
   background: linear-gradient(90deg, rgba(98, 181, 255, 0.12), transparent);
-}
-
-.project:focus-visible {
-  outline: 1px solid var(--accent);
-  outline-offset: 4px;
 }
 
 .project .mono {
@@ -618,9 +611,41 @@ nav a:focus-visible {
   line-height: 1.6;
 }
 
-.project-arrow {
-  color: #85a9d1;
-  font-size: 22px;
+.project-links {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid #2a578c;
+  border-radius: 7px;
+  background: #0b2851;
+  color: #d8e8fa;
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.project-links a:hover,
+.project-links a:focus-visible {
+  transform: translateY(-2px);
+  border-color: #7fc4ff;
+}
+
+.project-links .project-demo {
+  border-color: #7fc4ff;
+  background: #62b5ff;
+  color: #061a38;
 }
 
 .cta-section {
@@ -691,6 +716,15 @@ footer p {
   .role {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .project {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-links {
+    justify-content: flex-start;
   }
 
   .case-study > div {
