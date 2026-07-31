@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Selected AI and automotive technology projects by Jonathan Anzuoni." />
+    <meta name="theme-color" content="#061a38" />
+    <meta property="og:title" content="Portfolio | Jonathan Anzuoni" />
+    <meta property="og:description" content="Selected AI systems, safety intelligence tools, and applied technology projects." />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://jonathananzuoni.com/portfolio" />
+    <title>Portfolio | Jonathan Anzuoni</title>
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Jonathan Anzuoni, home"><span class="brand-mark">JA</span><span>Jonathan Anzuoni</span></a>
+      <nav aria-label="Primary navigation">
+        <a class="nav-portfolio" href="/">Home</a>
+        <a href="/cv">CV</a>
+        <a class="nav-cta" href="/mail">Let’s talk <span>↗</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero portfolio-hero">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="status-dot"></span>Selected work</div>
+          <h1>Applied AI for real operational problems.</h1>
+          <p class="hero-copy">A selection of systems built at the intersection of artificial intelligence, automotive technology, data, and decision support.</p>
+        </div>
+      </section>
+      <section class="portfolio-grid" aria-label="Portfolio projects">
+        <article class="portfolio-card">
+          <div class="portfolio-card-copy">
+            <p class="mono">01 · Computer vision</p>
+            <h2>Vehicle Damage Inspection System</h2>
+            <p>An AI-assisted inspection workspace that detects and annotates visible vehicle damage, including dents, scratches, cracks, broken lamps, and flat tires.</p>
+            <div class="project-links">
+              <a href="https://github.com/sf9393/vehicle-damage-inspection-system" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <a class="project-demo" href="https://sf9393.github.io/vehicle-damage-inspection-system/" target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <dl class="portfolio-details">
+            <div class="portfolio-detail"><dt>Stack</dt><dd>YOLOv8, FastAPI, React</dd></div>
+            <div class="portfolio-detail"><dt>Focus</dt><dd>Damage segmentation, visual annotation, inspection workflows</dd></div>
+            <div class="portfolio-detail"><dt>Role</dt><dd>Product architecture and full-stack implementation</dd></div>
+          </dl>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-card-copy">
+            <p class="mono">02 · Safety intelligence</p>
+            <h2>Automotive Safety Intelligence Copilot</h2>
+            <p>An evidence-first safety intelligence workspace that surfaces NHTSA complaints and recalls, ranks emerging signals, and produces traceable investigation briefs.</p>
+            <div class="project-links">
+              <a href="https://github.com/sf9393/automotive-safety-intelligence-copilot" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <a class="project-demo" href="https://sf9393.github.io/automotive-safety-intelligence-copilot/" target="_blank" rel="noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <dl class="portfolio-details">
+            <div class="portfolio-detail"><dt>Stack</dt><dd>React, NHTSA APIs, retrieval-augmented generation</dd></div>
+            <div class="portfolio-detail"><dt>Focus</dt><dd>Signal ranking, complaint analysis, traceable research</dd></div>
+            <div class="portfolio-detail"><dt>Role</dt><dd>Product strategy, interface design, and implementation</dd></div>
+          </dl>
+        </article>
+      </section>
+      <section class="cta-section">
+        <p class="mono">Contact</p>
+        <h2>Building something ambitious?</h2>
+        <a class="button button-primary" href="/mail">Get in touch <span>↗</span></a>
+      </section>
+    </main>
+    <footer>
+      <div><span class="brand-mark">JA</span><p>AI strategy · Emerging technology · Analytics</p></div>
+      <p>© <span id="year"></span> Jonathan Anzuoni</p>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

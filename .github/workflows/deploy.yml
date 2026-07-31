@@ -32,8 +32,8 @@ jobs:
       - name: Prepare site
         run: |
           mkdir _site
-          cp index.html styles.css script.js jonathan.png jonathan-anzuoni-resume.pdf _site/
-          cp -R cv _site/
+          cp index.html styles.css script.js jonathan.png favicon.png jonathan-anzuoni-resume.pdf _site/
+          cp -R cv portfolio linkedin github mail _site/
           touch _site/.nojekyll
 
       - name: Upload site
